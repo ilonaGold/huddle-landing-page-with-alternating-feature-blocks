@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+
+/* Global Styles */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Colors */
+
+:root {
+  --pink: hsl(322, 100%, 66%);
+  --very-pale-cyan: hsl(193, 100%, 96%);
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --graying-blue: hsl(208, 11%, 55%);
+  --white: hsl(0, 0%, 100%);
+  --blue: hsl(228, 45%, 44%);
+}
+
+/* Typography  */
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+.btn {
+  font-size: 0.6rem;
+  font-weight: 700;
+}
+
+/* Layout */
+
+/* Header */
+
+header {
+  background: var(--very-pale-cyan) url("images/bg-hero-mobile.svg") no-repeat;
+  padding: 1.5em 0.8em;
+}
+
+.navbar > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar {
+  margin-bottom: 4.4em;
+}
+
+.logo {
+  width: 100px;
+}
+
+.btn-secondary {
+  background: var(--white);
+  color: var(--very-dark-cyan);
+  padding: 0.4em 2em;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.025) 0px 5px 5px -8px,
+    rgba(0, 0, 0, 0.1) 0px 5px 5px -2px;
+}
+
+.hero {
+  width: 85.6%;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-bottom: 1em;
+  letter-spacing: -0.8px;
+  color: var(--very-dark-cyan);
+}
+
+.company-info {
+  text-align: center;
+}
+
+.company-info p {
+  font-size: 0.875rem;
+  letter-spacing: -0.1px;
+  line-height: 24px;
+  margin-bottom: 2.4em;
+}
+
+.btn-primary {
+  background: var(--pink);
+  color: var(--very-pale-cyan);
+  letter-spacing: 0.5px;
+  padding: 1.2em 6em;
+  border-radius: 20px;
+}
+
+.mockup {
+  margin: 3.6em 0 0.3em;
+}
+
+/* Footer */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--blue);
+}
