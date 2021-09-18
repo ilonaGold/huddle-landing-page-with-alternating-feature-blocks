@@ -11,7 +11,15 @@
       href="./images/favicon-32x32.png"
     />
 
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
 
     <title>
       Frontend Mentor | Huddle landing page with alternating feature blocks
@@ -19,39 +27,43 @@
   </head>
 
   <body>
-      <header>
-        <nav class="navbar">
-          <ul>
-            <li><a href="#"><img class="logo" src="images/logo.svg" alt="Company logo"/></a></li>
-            <li><a class="btn btn-secondary" href="#">Try It Free</a></li>
-          </ul>
-        </nav>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="#"
+              ><img class="logo" src="images/logo.svg" alt="Company logo"
+            /></a>
+          </li>
+          <li><a class="btn btn-secondary" href="#">Try It Free</a></li>
+        </ul>
+      </nav>
 
-        <section class="hero">
-          <div class="company-info">
-            <h1>Build The Community Your Fans Will Love</h1>
-            <p>
-                Huddle re-imagines the way we build communities. You have a voice, but
-                so does your audience. Create connections with your users as you
-                engage in genuine discussion.
-            </p>
-            <a class="btn btn-primary" href="#">Get Started For Free</a>
-          </div>
-      
-          <div class="mockup">
-            <img
-              class="hero-image"
-              src="images/illustration-mockups.svg"
-              alt="Hero image"
-            />
-          </div>
-        </section>
-      </header>
- 
+      <section class="hero">
+        <div class="company-info">
+          <h1>Build The Community Your Fans Will Love</h1>
+          <p>
+            Huddle re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </p>
+          <a class="btn btn-primary" href="#">Get Started For Free</a>
+        </div>
+
+        <div class="mockup">
+          <img
+            class="hero-image"
+            src="images/illustration-mockups.svg"
+            alt="Hero image"
+          />
+        </div>
+      </section>
+    </header>
+
     <main>
       <section class="grow-together container">
         <div class="grow-together-image">
-          <img src="images/illustration-grow-together.svg" alt=""/>
+          <img src="images/illustration-grow-together.svg" alt="" />
         </div>
         <div class="grow-together-text">
           <h2>Grow Together</h2>
@@ -65,7 +77,7 @@
 
       <section class="conversations container">
         <div class="conversations-image">
-          <img src="images/illustration-flowing-conversation.svg" alt=""/>
+          <img src="images/illustration-flowing-conversation.svg" alt="" />
         </div>
         <div class="conversations-text">
           <h2>Flowing Conversations</h2>
@@ -79,7 +91,7 @@
 
       <section class="users container">
         <div class="users-image">
-          <img src="images/illustration-your-users.svg" alt=""/>
+          <img src="images/illustration-your-users.svg" alt="" />
         </div>
         <div class="users-text">
           <h2>Your Users</h2>
@@ -91,65 +103,88 @@
         </div>
       </section>
 
-      <section class="community">
+      <section class="community container">
         <h2>Ready To Build Your Community?</h2>
         <a class="btn btn-primary" href="#">Get Started For Free</a>
       </section>
     </main>
 
     <footer>
-      <img class="logo-footer" src="images/logo.svg" alt=""/>
+      <img class="logo-footer" src="images/logo-footer.svg" alt="" />
       <div class="container-footer">
         <div class="footer-contact">
-          <img src="./images/icon-location.svg" alt=""/>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua
-          </p>
-          <img src="./images/icon-phone.svg" alt=""/>
-          <p>+1-543-123-4567</p>
-          <img src="./images/icon-email.svg" alt=""/>
-          <p>example@huddle.com</p>
+          <div>
+            <img src="./images/icon-location.svg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
+
+          <div>
+            <img src="./images/icon-phone.svg" alt="" />
+            <p>+1-543-123-4567</p>
+          </div>
+
+          <div>
+            <img src="./images/icon-email.svg" alt="" />
+            <p>example@huddle.com</p>
+          </div>
         </div>
 
-        <div class="footer-links-left-col">
-          <ul>
-            <li>
-              <a href="#">About Us</a>
-            </li>
-            <li>
-              <a href="#">What We Do</a>
-            </li>
-            <li>
-              <a href="#">FAQ</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-links-right-col">
-          <ul>
-            <li>
-              <a href="#">Career</a>
-            </li>
-            <li>
-              <a href="#">Blog</a>
-            </li>
-            <li>
-              <a href="#">Contact Us</a>
-            </li>
-          </ul>
+        <div class="footer-links">
+          <div class="footer-links-left-col">
+            <ul>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">What We Do</a>
+              </li>
+              <li>
+                <a href="#">FAQ</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-links-right-col">
+            <ul>
+              <li>
+                <a href="#">Career</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
-      <div class="social-icons">
-        <a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
-        <a class="twitter" href="#"><i class="fab fa-twitter"></i></a>
-        <a class="instagram" href="#"><i class="fab fa-instagram"></i></a>
-      </div>
-        <p class="copyright">&copy; Copyright 2018 Huddle. All rights reserved.</p>
-        <p class="attribution">Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-        >. Coded by <a href="https://replit.com/@ilonaGold">ilonaGold</a>.
+        <div class="social-icons">
+          <ul>
+            <li class="facebook">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="twitter">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="instagram">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <p class="copyright">
+          &copy; Copyright 2018 Huddle. All rights reserved.
+        </p>
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="https://replit.com/@ilonaGold">ilonaGold</a>.
         </p>
       </div>
     </footer>
