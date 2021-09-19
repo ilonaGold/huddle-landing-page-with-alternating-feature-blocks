@@ -155,10 +155,14 @@ h1 {
 
 /* Cards */
 
+main {
+  position: relative;
+}
+
 .container {
-  margin: 3.5em auto -1.5em;
+  background: var(--white);
+  margin: 3.5em auto 0;
   width: 88%;
-  height: 27em;
   padding: 3em 2.25em;
   text-align: center;
   box-shadow: rgba(100, 100, 111, 0.1) 5px 7px 20px 5px;
@@ -173,12 +177,16 @@ h2 {
   margin-bottom: 0.75em;
 }
 
+.users {
+  margin-bottom: 13em;
+}
+
 .community {
-  margin-top: 8em;
   width: 93%;
-  height: 10em;
-  padding: 2.1em 0em 0em;
-  background: var(--white);
+  padding: 2.5em 0;
+  position: absolute;
+  bottom: -18.5%;
+  left: 3.5%;
 }
 
 .community h2 {
@@ -196,8 +204,6 @@ footer {
   background-color: var(--very-dark-cyan);
   color: var(--white);
   padding: 6.25em 0em 3em 1em;
-  position: absolute;
-  top: 318%;
   z-index: -1;
 }
 
