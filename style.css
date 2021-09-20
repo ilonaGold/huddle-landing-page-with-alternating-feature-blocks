@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
 
-/* Global Styles */
+/* Global Styles
+================
+*/
 
 *,
 *::before,
@@ -21,14 +23,15 @@ img {
 
 a {
   text-decoration: none;
-  color: var(--white);
 }
 
 ul {
   list-style: none;
 }
 
-/* Colors */
+/* Colors 
+=========
+*/
 
 :root {
   --pink: hsl(322, 100%, 66%);
@@ -36,10 +39,11 @@ ul {
   --very-dark-cyan: hsl(192, 100%, 9%);
   --grayish-blue: hsl(208, 11%, 55%);
   --white: hsl(0, 0%, 100%);
-  --blue: hsl(228, 45%, 44%);
 }
 
-/* Typography  */
+/* Typography 
+=============
+*/
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -64,15 +68,16 @@ h2 {
 
 .company-info p {
   font-size: 0.875rem;
+  color: var(--very-dark-cyan);
   letter-spacing: -0.1px;
-  line-height: 24px;
+  line-height: 1.33em;
 }
 
 .container p {
   font-size: 0.735em;
   color: var(--grayish-blue);
   opacity: 0.9;
-  line-height: 20px;
+  line-height: 1.11em;
 }
 
 .users-text p {
@@ -86,7 +91,14 @@ h2 {
 
 .footer-contact div p {
   font-size: 0.875rem;
-  line-height: 23px;
+  line-height: 1.28em;
+}
+
+.footer-contact,
+.copyright,
+a {
+  color: var(--very-pale-cyan);
+  opacity: 0.8;
 }
 
 .copyright,
@@ -94,7 +106,16 @@ h2 {
   font-size: 0.6rem;
 }
 
-/* Layout */
+.attribution {
+  color: var(--white);
+}
+.attribution a {
+  color: var(--very-pale-cyan);
+}
+
+/* Layout 
+=========
+*/
 
 /* Header */
 
@@ -123,10 +144,6 @@ header {
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.025) 0px 5px 5px -8px,
     rgba(0, 0, 0, 0.1) 0px 5px 5px -2px;
-}
-
-.hero {
-  margin: 0 auto;
 }
 
 h1 {
@@ -202,7 +219,7 @@ h2 {
 
 footer {
   background-color: var(--very-dark-cyan);
-  color: var(--white);
+  color: var(--very-pale-cyan);
   padding: 6.25em 0em 3em 1em;
   z-index: -1;
 }
@@ -252,8 +269,8 @@ footer img {
   min-width: 2.5em;
   min-height: 2.5em;
   font-size: 0.7em;
-  color: var(--white);
-  border: 1px solid var(--white);
+  color: var(--very-pale-cyan);
+  border: 1px solid var(--very-pale-cyan);
   border-radius: 50%;
   margin: 0.5em;
 }
@@ -267,6 +284,155 @@ footer img {
   text-align: center;
 }
 
-.attribution a {
-  color: var(--blue);
+/* Media Queries 
+================
+*/
+
+@media (min-width: 1440px) {
+  /* Typography */
+  h1 {
+    font-size: 2.2em;
+  }
+  h2 {
+    font-size: 1.6em;
+  }
+  .company-info p,
+  .container p {
+    font-size: 1em;
+  }
+
+  /* Layout */
+  header {
+    background: var(--very-pale-cyan) url("images/bg-hero-desktop.svg")
+      no-repeat;
+    padding: 3em 4.5em;
+  }
+  .hero,
+  .container {
+    display: flex;
+  }
+  .container,
+  .company-info {
+    text-align: left;
+  }
+  .container {
+    padding-left: 7.1em;
+    padding-bottom: 0;
+    margin: 2em auto;
+  }
+  main {
+    margin: 9em 1.5em;
+  }
+  section {
+    align-items: center;
+    justify-content: center;
+    min-height: 24em;
+  }
+
+  /* Header */
+  .logo {
+    width: 9em;
+  }
+  .btn-secondary {
+    padding: 1em 3em;
+  }
+  .mockup {
+    margin: unset;
+  }
+  .company-info {
+    width: 60%;
+    margin-right: 5em;
+  }
+
+  /* Cards */
+  .grow-together,
+  .users {
+    flex-direction: row-reverse;
+  }
+  .grow-together-text {
+    width: 80%;
+    padding-bottom: 2.75em;
+  }
+  .grow-together-text p {
+    width: 80%;
+    line-height: 27px;
+  }
+  .grow-together-image {
+    width: 50%;
+  }
+
+  .conversations-text {
+    margin-left: 10em;
+    padding-bottom: 2.75em;
+  }
+  .conversations-text p {
+    line-height: 27px;
+  }
+  .conversations-image {
+    width: 75%;
+  }
+
+  .users {
+    margin-bottom: 18em;
+  }
+  .users-text {
+    padding-bottom: 2.75em;
+  }
+  .users-text p {
+    line-height: 27px;
+    width: 80%;
+  }
+  .users-image {
+    width: 90%;
+  }
+
+  section.community {
+    min-height: 15em;
+  }
+  .community {
+    display: block;
+    text-align: center;
+    bottom: -33.5%;
+    left: 25%;
+    padding: 3em 0 0;
+    width: 50%;
+  }
+  .community h2 {
+    margin-bottom: 2.2em;
+  }
+  .community .btn-primary {
+    font-size: 1rem;
+    padding: 1.3em 6em;
+    border-radius: 50px;
+  }
+
+  /* Footer */
+  .container-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2.5em;
+  }
+  .logo-footer {
+    margin-top: 4em;
+    margin-left: 2.5em;
+    margin-bottom: 0.5em;
+    width: 13em;
+    height: 2em;
+  }
+  .footer-contact {
+    width: 30%;
+  }
+  .footer-links-left-col,
+  .footer-links-right-col {
+    margin-top: 0.75em;
+    line-height: 2.5em;
+  }
+  .social-icons {
+    margin-top: 0.75em;
+    margin-right: 9em;
+  }
+  .copyright {
+    text-align: right;
+    margin-right: 5em;
+  }
 }
