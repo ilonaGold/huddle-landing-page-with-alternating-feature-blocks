@@ -54,10 +54,15 @@ h2 {
   font-family: "Poppins", sans-serif;
 }
 
+h1,
+h2,
+.company-info p .community h2 {
+  color: var(--very-dark-cyan);
+}
+
 h1 {
   font-size: 1.3rem;
   font-weight: 600;
-  color: var(--very-dark-cyan);
   letter-spacing: -0.8px;
 }
 
@@ -68,7 +73,6 @@ h2 {
 
 .company-info p {
   font-size: 0.875rem;
-  color: var(--very-dark-cyan);
   letter-spacing: -0.1px;
   line-height: 1.33em;
 }
@@ -166,6 +170,11 @@ h1 {
   border-radius: 20px;
 }
 
+.btn-primary:hover,
+.btn-primary:focus {
+  opacity: 0.8;
+}
+
 .mockup {
   margin: 3.6em 0 0.3em;
 }
@@ -212,7 +221,12 @@ h2 {
 
 .community .btn {
   padding: 1.2em 4em;
-  box-shadow: var(--grayish-blue) 0 0 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 10px;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.5;
 }
 
 /* Footer */
@@ -273,6 +287,12 @@ footer img {
   border: 1px solid var(--very-pale-cyan);
   border-radius: 50%;
   margin: 0.5em;
+}
+
+.fab:hover,
+.fab:focus {
+  color: var(--pink);
+  border: 1px solid var(--pink);
 }
 
 .copyright {
@@ -448,6 +468,17 @@ footer img {
 }
 
 @media (min-width: 1920px) {
+  .company-info p {
+    margin-bottom: 4.5em;
+  }
+  .company-info .btn-primary {
+    font-size: 1rem;
+    padding: 1em 3em;
+    border-radius: 50px;
+  }
+  .company-info {
+    padding-top: 0;
+  }
   .community {
     bottom: -25%;
   }
