@@ -291,14 +291,24 @@ footer img {
 @media (min-width: 1440px) {
   /* Typography */
   h1 {
-    font-size: 2.2em;
+    font-size: 2.2rem;
   }
   h2 {
-    font-size: 1.6em;
+    font-size: 1.6rem;
   }
   .company-info p,
   .container p {
-    font-size: 1em;
+    font-size: 1rem;
+  }
+  .community h2 {
+    font-size: 1.85rem;
+  }
+  .footer-contact div p {
+    font-size: 0.9rem;
+    line-height: 1.5em;
+  }
+  .copyright {
+    font-size: 0.7rem;
   }
 
   /* Layout */
@@ -392,17 +402,17 @@ footer img {
   .community {
     display: block;
     text-align: center;
+    width: 56%;
     bottom: -33.5%;
-    left: 25%;
-    padding: 3em 0 0;
-    width: 50%;
+    left: 21%;
+    padding: 3.7em 0 4.5em;
   }
   .community h2 {
-    margin-bottom: 2.2em;
+    margin-bottom: 2em;
   }
   .community .btn-primary {
-    font-size: 1rem;
-    padding: 1.3em 6em;
+    font-size: 1.1rem;
+    padding: 1.5em 5.3em;
     border-radius: 50px;
   }
 
@@ -410,17 +420,17 @@ footer img {
   .container-footer {
     display: flex;
     justify-content: space-between;
-    margin-left: 2.5em;
+    margin-left: 5.5em;
   }
   .logo-footer {
     margin-top: 4em;
-    margin-left: 2.5em;
+    margin-left: 5em;
     margin-bottom: 0.5em;
-    width: 13em;
-    height: 2em;
+    width: 13.5em;
+    height: 2.25em;
   }
   .footer-contact {
-    width: 30%;
+    width: 28.75%;
   }
   .footer-links-left-col,
   .footer-links-right-col {
@@ -429,10 +439,16 @@ footer img {
   }
   .social-icons {
     margin-top: 0.75em;
-    margin-right: 9em;
+    margin-right: 12em;
   }
   .copyright {
     text-align: right;
-    margin-right: 5em;
+    margin-right: 6em;
+  }
+}
+
+@media (min-width: 1920px) {
+  .community {
+    bottom: -25%;
   }
 }
