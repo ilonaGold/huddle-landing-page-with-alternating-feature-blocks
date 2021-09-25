@@ -56,7 +56,7 @@ h2 {
 
 h1,
 h2,
-.company-info p .community h2 {
+.community h2 {
   color: var(--very-dark-cyan);
 }
 
@@ -72,6 +72,9 @@ h2 {
 }
 
 .company-info p {
+  color: var(--grayish-blue);
+  opacity: 0.8;
+  font-weight: 700;
   font-size: 0.875rem;
   letter-spacing: -0.1px;
   line-height: 1.33em;
@@ -308,17 +311,61 @@ footer img {
 ================
 */
 
-@media (min-width: 1440px) {
-  /* Typography */
-  h1 {
-    font-size: 2.2rem;
+@media (min-width: 600px) {
+  header {
+    background: var(--very-pale-cyan) url("images/bg-hero-desktop.svg")
+      no-repeat;
   }
-  h2 {
-    font-size: 1.6rem;
+  header,
+  footer {
+    padding: 5em 3em;
   }
   .company-info p,
   .container p {
     font-size: 1rem;
+  }
+  .community {
+    width: 80%;
+    bottom: -15%;
+    left: 10%;
+  }
+  h1 {
+    font-size: 2.1em;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width: 7em;
+  }
+  .btn-secondary {
+    padding: 1em 3em;
+  }
+  h1 {
+    font-size: 1.8em;
+  }
+  .community {
+    bottom: -13%;
+  }
+  .community .btn-primary {
+    font-size: 1rem;
+    padding: 1em 3em;
+    border-radius: 50px;
+  }
+}
+
+@media (min-width: 900px) {
+  /* Typography */
+  h1,
+  h2 {
+    font-size: 1.6rem;
+  }
+  .company-info p {
+    line-height: 1.5em;
+    letter-spacing: -0.9px;
   }
   .community h2 {
     font-size: 1.85rem;
@@ -332,11 +379,6 @@ footer img {
   }
 
   /* Layout */
-  header {
-    background: var(--very-pale-cyan) url("images/bg-hero-desktop.svg")
-      no-repeat;
-    padding: 3em 4.5em;
-  }
   .hero,
   .container {
     display: flex;
@@ -346,8 +388,9 @@ footer img {
     text-align: left;
   }
   .container {
-    padding-left: 7.1em;
+    padding-right: 3em;
     padding-bottom: 0;
+    padding-left: 3em;
     margin: 2em auto;
   }
   main {
@@ -360,18 +403,34 @@ footer img {
   }
 
   /* Header */
+  header {
+    padding: 2.7em 4em;
+  }
   .logo {
-    width: 9em;
+    width: 11em;
   }
   .btn-secondary {
-    padding: 1em 3em;
+    font-size: 0.8em;
+    padding: 1em 4.5em;
+  }
+  .navbar {
+    margin-bottom: 3.9em;
   }
   .mockup {
-    margin: unset;
+    width: 85%;
+    margin-top: 0;
   }
   .company-info {
-    width: 60%;
-    margin-right: 5em;
+    width: 70%;
+    margin-right: 4.3em;
+  }
+  h1 {
+    margin-bottom: 0.6em;
+  }
+  .btn-primary {
+    font-size: 0.7rem;
+    border-radius: 50px;
+    padding: 1.5em 5.5em;
   }
 
   /* Cards */
@@ -392,14 +451,14 @@ footer img {
   }
 
   .conversations-text {
-    margin-left: 10em;
+    margin-left: 5em;
     padding-bottom: 2.75em;
   }
   .conversations-text p {
     line-height: 27px;
   }
   .conversations-image {
-    width: 75%;
+    width: 80%;
   }
 
   .users {
@@ -412,17 +471,71 @@ footer img {
     line-height: 27px;
     width: 80%;
   }
-  .users-image {
-    width: 90%;
-  }
 
   section.community {
-    min-height: 15em;
+    min-height: 10em;
   }
   .community {
     display: block;
     text-align: center;
-    width: 56%;
+    width: 75%;
+    bottom: -32.5%;
+    left: 13%;
+    padding: 2em 1em 4em;
+  }
+
+  /* Footer */
+  .container-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo-footer {
+    margin-top: 4em;
+    margin-bottom: 0.5em;
+  }
+  .footer-contact {
+    width: 33%;
+  }
+  .footer-links-left-col,
+  .footer-links-right-col {
+    margin-top: 0.75em;
+    margin-right: 1.5em;
+    line-height: 2.5em;
+  }
+  .social-icons {
+    margin-top: 0.75em;
+  }
+  .copyright {
+    text-align: right;
+  }
+}
+
+@media (min-width: 1440px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  .container {
+    padding-left: 7.1em;
+    padding-right: 2em;
+  }
+  .company-info {
+    width: 60%;
+  }
+  .mockup {
+    margin: unset;
+  }
+  .conversations-text {
+    margin-left: 9em;
+    padding-bottom: 2.75em;
+  }
+  .users-image {
+    width: 90%;
+  }
+  section.community {
+    min-height: 15em;
+  }
+  .community {
+    width: 58%;
     bottom: -33.5%;
     left: 21%;
     padding: 3.7em 0 4.5em;
@@ -432,47 +545,36 @@ footer img {
   }
   .community .btn-primary {
     font-size: 1.1rem;
-    padding: 1.5em 5.3em;
-    border-radius: 50px;
+    padding: 1.4em 5.3em;
   }
-
-  /* Footer */
   .container-footer {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 5.5em;
+    margin-left: 4em;
   }
   .logo-footer {
-    margin-top: 4em;
-    margin-left: 5em;
-    margin-bottom: 0.5em;
+    margin-left: 4em;
     width: 13.5em;
     height: 2.25em;
   }
-  .footer-contact {
-    width: 28.75%;
-  }
-  .footer-links-left-col,
-  .footer-links-right-col {
-    margin-top: 0.75em;
-    line-height: 2.5em;
-  }
   .social-icons {
     margin-top: 0.75em;
-    margin-right: 12em;
+    margin-right: 9.5em;
+    margin-left: 1.5em;
   }
   .copyright {
-    text-align: right;
-    margin-right: 6em;
+    margin-right: 2em;
   }
 }
 
 @media (min-width: 1920px) {
+  h1 {
+    font-size: 3rem;
+  }
   .company-info p {
-    margin-bottom: 4.5em;
+    font-size: 1.5rem;
+    margin-bottom: 3em;
   }
   .company-info .btn-primary {
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 1em 3em;
     border-radius: 50px;
   }
